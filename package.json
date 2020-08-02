@@ -1,0 +1,23 @@
+{
+  "name": "natours-landing-page",
+  "version": "1.0.0",
+  "description": "Natours Landing Page - working advanced CSS",
+  "main": "src/server.js",
+  "author": "Saulo Macambira",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --inspect src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

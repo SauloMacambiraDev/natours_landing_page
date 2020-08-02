@@ -1,0 +1,86 @@
+/*
+    COLORS:
+
+    Light green: #7ed56f;
+    Medium green: #55c57a;
+    Dark green: #28b485;
+
+    Purle colors:
+
+    Light purple: rgba(86, 7, 105)
+    Medium purple: rgb(143, 12, 175)
+    Dark purple: rgba(94, 18, 138, 0.8)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url('/imgs/hero.jpg');
+    /* Whatever the widht and height of the viewport, 'cover' always try to fit the image in its box */
+    background-size: cover; 
+    background-position: top;
+    /* Taking x y coordinates, polygon function start form(topleft, topright, bottomright, bottomleft) because the polygon has 4 axes */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    /* clip-path: circle(55%) */
+    position: relative;
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
+    /* browser will figure the width out. No need to set up width property */
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* translate() Will shift the element -50% width and -50% of its element height */
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase; /* Uppercase the text/content inside of that element */
+    
+}
+
+.heading-primary-main{
+    /* span by default is an inline element */
+    /* display: block occupy the entire width of parent element - breaking a line - and allow customization and its shape */
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
